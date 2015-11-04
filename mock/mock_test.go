@@ -2,8 +2,8 @@ package mock
 
 import (
 	"errors"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
+	"github.com/brildum/testify/assert"
+	"github.com/brildum/testify/require"
 	"testing"
 	"time"
 )

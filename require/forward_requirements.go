@@ -3,7 +3,7 @@ package require
 import (
 	"time"
 
-	"github.com/stretchr/testify/assert"
+	"github.com/brildum/testify/assert"
 )
 
 type Assertions struct {

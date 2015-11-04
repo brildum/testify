@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/stretchr/testify/assert"
+	"github.com/brildum/testify/assert"
 )
 
 type TestingT interface {

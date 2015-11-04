@@ -22,7 +22,7 @@ Get started:
 
 
 
-[`assert`](http://godoc.org/github.com/stretchr/testify/assert "API documentation") package
+[`assert`](http://godoc.org/github.com/brildum/testify/assert "API documentation") package
 -------------------------------------------------------------------------------------------
 
 The `assert` package provides some helpful methods that allow you to write better test code in Go.
@@ -38,7 +38,7 @@ package yours
 
 import (
   "testing"
-  "github.com/stretchr/testify/assert"
+  "github.com/brildum/testify/assert"
 )
 
 func TestSomething(t *testing.T) {
@@ -74,7 +74,7 @@ package yours
 
 import (
   "testing"
-  "github.com/stretchr/testify/assert"
+  "github.com/brildum/testify/assert"
 )
 
 func TestSomething(t *testing.T) {
@@ -99,7 +99,7 @@ func TestSomething(t *testing.T) {
 }
 ```
 
-[`require`](http://godoc.org/github.com/stretchr/testify/require "API documentation") package
+[`require`](http://godoc.org/github.com/brildum/testify/require "API documentation") package
 ---------------------------------------------------------------------------------------------
 
 The `require` package provides same global functions as the `assert` package, but instead of returning a boolean result they terminate current test.
@@ -107,14 +107,14 @@ The `require` package provides same global functions as the `assert` package, bu
 See [t.FailNow](http://golang.org/pkg/testing/#T.FailNow) for details.
 
 
-[`http`](http://godoc.org/github.com/stretchr/testify/http "API documentation") package
+[`http`](http://godoc.org/github.com/brildum/testify/http "API documentation") package
 ---------------------------------------------------------------------------------------
 
-The `http` package contains test objects useful for testing code that relies on the `net/http` package.  Check out the [(deprecated) API documentation for the `http` package](http://godoc.org/github.com/stretchr/testify/http).
+The `http` package contains test objects useful for testing code that relies on the `net/http` package.  Check out the [(deprecated) API documentation for the `http` package](http://godoc.org/github.com/brildum/testify/http).
 
 We recommend you use [httptest](http://golang.org/pkg/net/http/httptest) instead.
 
-[`mock`](http://godoc.org/github.com/stretchr/testify/mock "API documentation") package
+[`mock`](http://godoc.org/github.com/brildum/testify/mock "API documentation") package
 ----------------------------------------------------------------------------------------
 
 The `mock` package provides a mechanism for easily writing mock objects that can be used in place of real objects when writing test code.
@@ -126,7 +126,7 @@ package yours
 
 import (
   "testing"
-  "github.com/stretchr/testify/mock"
+  "github.com/brildum/testify/mock"
 )
 
 /*
@@ -176,11 +176,11 @@ func TestSomething(t *testing.T) {
 }
 ```
 
-For more information on how to write mock code, check out the [API documentation for the `mock` package](http://godoc.org/github.com/stretchr/testify/mock).
+For more information on how to write mock code, check out the [API documentation for the `mock` package](http://godoc.org/github.com/brildum/testify/mock).
 
 You can use the [mockery tool](http://github.com/vektra/mockery) to autogenerate the mock code against an interface as well, making using mocks much quicker.
 
-[`suite`](http://godoc.org/github.com/stretchr/testify/suite "API documentation") package
+[`suite`](http://godoc.org/github.com/brildum/testify/suite "API documentation") package
 -----------------------------------------------------------------------------------------
 
 The `suite` package provides functionality that you might be used to from more common object oriented languages.  With it, you can build a testing suite as a struct, build setup/teardown methods and testing methods on your struct, and run them with 'go test' as per normal.
@@ -191,8 +191,8 @@ An example suite is shown below:
 // Basic imports
 import (
     "testing"
-    "github.com/stretchr/testify/assert"
-    "github.com/stretchr/testify/suite"
+    "github.com/brildum/testify/assert"
+    "github.com/brildum/testify/suite"
 )
 
 // Define the suite, and absorb the built-in basic suite
@@ -222,9 +222,9 @@ func TestExampleTestSuite(t *testing.T) {
 }
 ```
 
-For a more complete example, using all of the functionality provided by the suite package, look at our [example testing suite](https://github.com/stretchr/testify/blob/master/suite/suite_test.go)
+For a more complete example, using all of the functionality provided by the suite package, look at our [example testing suite](https://github.com/brildum/testify/blob/master/suite/suite_test.go)
 
-For more information on writing suites, check out the [API documentation for the `suite` package](http://godoc.org/github.com/stretchr/testify/suite).
+For more information on writing suites, check out the [API documentation for the `suite` package](http://godoc.org/github.com/brildum/testify/suite).
 
 `Suite` object has assertion methods:
 
@@ -232,7 +232,7 @@ For more information on writing suites, check out the [API documentation for the
 // Basic imports
 import (
     "testing"
-    "github.com/stretchr/testify/suite"
+    "github.com/brildum/testify/suite"
 )
 
 // Define the suite, and absorb the built-in basic suite
@@ -273,9 +273,9 @@ To install Testify, use `go get`:
 
 This will then make the following packages available to you:
 
-    github.com/stretchr/testify/assert
-    github.com/stretchr/testify/mock
-    github.com/stretchr/testify/http
+    github.com/brildum/testify/assert
+    github.com/brildum/testify/mock
+    github.com/brildum/testify/http
 
 Import the `testify/assert` package into your code using this template:
 
@@ -284,7 +284,7 @@ package yours
 
 import (
   "testing"
-  "github.com/stretchr/testify/assert"
+  "github.com/brildum/testify/assert"
 )
 
 func TestSomething(t *testing.T) {
